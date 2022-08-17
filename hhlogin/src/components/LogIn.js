@@ -71,6 +71,7 @@ export default function SignIn() {
               control={<Checkbox value="remember" color="primary" />}
               label="Remember me"
             />
+            
             <Button
               type="submit"
               fullWidth
@@ -79,24 +80,28 @@ export default function SignIn() {
             >
               Login
             </Button>
-            <Grid container>
-              <Grid item xs>
-                <Button href="#" variant="outlined">
-                  Forgot password?
-                </Button>
-              </Grid>
-              <Grid item>
-                <Button href="#" variant="outlined">
-                  {"Don't have an account? Sign Up"}
-                </Button>
-              </Grid>
 
-              <Grid item>
-                <Button variant='outlined' size='small' alignItems='center' href='#'>
-                  continue as guest
-                </Button>
-              </Grid>
-            </Grid>
+            <Button
+              type="submit"
+              fullWidth
+              variant="outlined"
+              sx={{ mt: 3, mb: 2 }}
+            >
+              Continue as Guest
+            </Button>
+
+            <Button
+              type="submit"
+              fullWidth
+              variant="outlined"
+              sx={{ mt: 3, mb: 2 }}
+            >
+              Create an Account
+            </Button>
+            
+            <Link alignItems={'self-end'}>
+            Forgot Password
+            </Link>
           </Box>
         </Box>
       </Container>
